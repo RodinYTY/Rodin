@@ -1,4 +1,4 @@
-from qsort import qSort
+from qSort import qSort
 
 if __name__ == '__main__':
     a = [49, 38, 65, 97, 76, 13, 27]

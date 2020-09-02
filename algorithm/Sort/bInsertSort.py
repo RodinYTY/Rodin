@@ -8,8 +8,3 @@ def bInserSort(L):
             else:
                 high = m - 1
         L.insert(high + 1, L.pop(i))
-
-
-a = [2,9,-2,0,0,2,3,1,9,29,-12,9,10]
-bInserSort(a)
-print(a)

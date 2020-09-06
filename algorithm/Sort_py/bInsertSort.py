@@ -1,4 +1,8 @@
 def bInserSort(L):
+    """
+    折半插入排序
+    :param L: list
+    """
     for i in range(1, len(L)):
         low, high = 0, i - 1
         while low <= high:

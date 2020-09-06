@@ -1,15 +1,15 @@
 def partition(L, low, high):
     # 关键字(枢轴)取第一位
-    pivotkey = L[low]
+    # pivotkey = L[low]
     # 结束条件：low = high
     while low < high:
-        while low < high and L[high] >= pivotkey:
+        while low < high and L[high] >= L[low]:
             high -= 1
         # 交换low和high对应的元素
-        t = L[low]; L[low] = L[high]; L[high] = t
-        while low < high and L[low] <= pivotkey:
+        L[low], L[high] = L[high], L[low]
+        while low < high and L[low] <= L[high]:
             low += 1
-        t = L[low]; L[low] = L[high]; L[high] = t
+        L[low], L[high] = L[high], L[low]
     return low  # 分位点
 
 

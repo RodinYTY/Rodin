@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/rodin/Documents/RodinYTY/algorithm/Sort_c/header/Sort.h
+
+/Users/rodin/Documents/RodinYTY/algorithm/Sort_c/source/Sort.cpp
+../header/Sort.h
+/Users/rodin/Documents/RodinYTY/algorithm/Sort_c/header/Sort.h
+iostream
+-
+

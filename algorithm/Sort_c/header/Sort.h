@@ -16,12 +16,13 @@ public:
     void shellSortWithoutScout(int L[], int len);
     void bubbleSort(int L[], int len);
     void heapSort(int bTreeArr[], int len);
+    void mergeSort(int L[], int low, int high);
 
 private:
     int partition(int L[], int low, int high);
     void buildMaxHeap(int bTreeArr[], int len);
     void headAdjust(int bTreeArr[], int root, int len);
-
+    void merge(int L[], int low, int mid, int high);
 };
 
 

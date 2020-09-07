@@ -68,7 +68,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z extract themes command-not-found sudo zsh-autosuggestions)
+plugins=(z extract themes command-not-found sudo zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,7 +106,12 @@ alias src='source ~/.zshrc'
 alias vrc='vim ~/.vimrc'
 alias h='cd ~'
 alias -s nicnt=vim
+alias getinitial='cp /Users/rodin/Documents/RodinYTY/initial.sh .'
 alias mysql=/usr/local/mysql/bin/mysql
 set clipboard=unamed
 #alias rm="trash -F"
 export PATH=/usr/local/smlnj/bin:"$PATH"
+export PATH="/usr/local/opt/flex/bin:$PATH"
+export QTDIR=/Users/rodin/Qt/5.15.0/clang_64
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$QTDIR/lib
+export PATH=$PATH:$QTDIR/bin

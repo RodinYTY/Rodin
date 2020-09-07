@@ -10,7 +10,7 @@ read -r -p "Repository name? " string
 git remote add origin git@github.com:RodinYTY/$string.git
 echo "$string.git added"
 
-read -r -p "Continue to initial your repository? [Y/n] " input
+read -r -p "Continue to initial your repository? [Y/N] " input
 case $input in
     [yY][eE][sS]|[yY])
 		;;
@@ -23,8 +23,9 @@ esac
 echo "pulling origin master..."
 git pull origin master --allow-unrelated-histories
 git add .
+git rm -f initial.sh
 
-read -r -p "Input comment for committing " comment             
+read -r -p "Comment for committing? " comment
 git commit -m "$comment"
 
 git push origin master

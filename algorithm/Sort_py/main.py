@@ -2,6 +2,7 @@ import random
 from qSort import qSort
 from bInsertSort import bInserSort
 from shellSort import shellSort
+from mergeSort import mergeSort
 
 
 def isAscending(L: list) -> bool:
@@ -25,4 +26,5 @@ def testSorting(func):
 
 
 if __name__ == '__main__':
-    testSorting(qSort)
+    testSorting(mergeSort)
+

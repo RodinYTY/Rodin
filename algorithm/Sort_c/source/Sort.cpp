@@ -125,7 +125,7 @@ void Sort::bubbleSort(int *L, int len) {
     }
 }
 
-/// 堆排序，空间复杂度：O(1)，显然不稳定
+/// 堆排序，空间复杂度：O(1)，显然不稳定，时间复杂度：O(n)
 /// \param heap 堆数组
 /// \param len 堆元素个数
 void Sort::heapSort(int *heap, int len) {
@@ -168,3 +168,41 @@ void Sort::headAdjust(int *heap, int k, int len) {
     heap[k] = heap[0];
 }
 
+/// 合并相邻有序表
+/// \param L
+/// \param beg
+/// \param seg
+/// \param end
+void Sort::merge(int *L, int beg, int seg, int end) {
+    int B[end + 1];
+    for(int i = 0; i < end + 1; i++){
+        B[i] = L[i];
+    }
+    int low = beg, high = seg + 1;
+    // 因为是有序的，时间复杂度：O(n)
+    while(low != seg + 1 || high != end + 1){
+        // 稳定性：稳定
+        if(low != seg + 1 && (high == end + 1 || B[low] <= B[high])){
+            L[low + high - seg - 1] = B[low];
+            low++;
+        }
+        else{
+            L[low + high - seg - 1] = B[high];
+            high++;
+        }
+    }
+}
+
+/// 归并排序，需要用到辅助数组，空间复杂度O(n)
+/// \param L
+/// \param low
+/// \param high
+void Sort::mergeSort(int *L, int low, int high) {
+    // 折半合并，故总的时间复杂度：O(nlon2 n)
+    if(low < high){
+        int mid = (low + high) / 2;
+        mergeSort(L, low, mid);
+        mergeSort(L, mid + 1, high);
+        merge(L, low, mid, high);
+    }
+}

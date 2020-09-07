@@ -13,8 +13,8 @@ int main() {
     int b[] = {4, 5, 9, 9, 5};
     sort->qSort(b, 5);
     prnArr(b);
-    int c[] = {0, 9, 6, 4, 5, 3, 9, 0, 1};
-    sort->heapSort(c, 8);
+    int c[] = {10, 9, 6, 4, 5, 4, 9, -3, 1, -8, -7, 12, 9};
+    sort->mergeSort(c,0,12);
     prnArr(c);
     return 0;
 }

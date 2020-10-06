@@ -22,8 +22,8 @@ esac
 
 echo "pulling origin master..."
 git pull origin master --allow-unrelated-histories
+git rm initial.sh
 git add .
-git rm -f initial.sh
 
 read -r -p "Comment for committing? " comment
 git commit -m "$comment"

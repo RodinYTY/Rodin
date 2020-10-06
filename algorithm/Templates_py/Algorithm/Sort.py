@@ -111,7 +111,7 @@ class Sort:
                 while low != seg + 1:
                     L[low + high - seg - 1] = B[low]
                     low += 1
-            elif high == end + 1 or not cmp(B[high], B[low]):
+            elif not cmp(B[high], B[low]):
                 L[low + high - seg - 1] = B[low]
                 low += 1
             else:

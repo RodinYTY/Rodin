@@ -154,6 +154,7 @@ void Sort::headAdjust(int *heap, int k, int len) {
     // 暂存根节点
     heap[0] = heap[k];
     int i = 2 * k; // i表示的是较大根的位置
+    // 带有scout的数组里len对应最后一位
     while (i <= len) {
         if (i < len && heap[i] < heap[i + 1])
             i++;
@@ -163,7 +164,7 @@ void Sort::headAdjust(int *heap, int k, int len) {
         }
         else
             break;
-        i *= 2;
+        i *= 2; // k替代i，i又为k的左子节点
     }
     heap[k] = heap[0];
 }

@@ -1,3 +1,6 @@
+from Stack_Queue import *
+
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -27,8 +30,6 @@ class TreeNodeSolution:
     def deserialize(self, data: str) -> TreeNode:
         """
         解析层序字符串序列，生成二叉树并返回节点
-        :param data:
-        :return:
         """
         if data == "[]":
             return None

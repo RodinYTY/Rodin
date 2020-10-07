@@ -11,6 +11,10 @@ class Queue:
     def dequeue(self):
         return self.items.pop()
 
+    # @optional
+    def size(self):
+        return len(self.items)
+
     def head(self):
         """
         出队的方向
@@ -22,9 +26,6 @@ class Queue:
         进队的方向
         """
         return self.items[0]
-
-    def size(self):
-        return len(self.items)
 
 
 class Stack:
@@ -40,8 +41,9 @@ class Stack:
     def pop(self):
         return self.items.pop()
 
-    def peek(self):
-        return self.items[-1]
-
+    # @optional
     def size(self):
         return len(self.items)
+
+    def peek(self):
+        return self.items[-1]

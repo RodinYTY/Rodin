@@ -1,4 +1,5 @@
 #!/usr/bin/env bash 
+rm initial.sh
 git init
 git config --global user.name "RodinYTY"
 git config --global user.email "1418583869@qq.com"
@@ -22,7 +23,6 @@ esac
 
 echo "pulling origin master..."
 git pull origin master --allow-unrelated-histories
-git rm initial.sh
 git add .
 
 read -r -p "Comment for committing? " comment

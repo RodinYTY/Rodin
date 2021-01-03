@@ -8,7 +8,7 @@ export ZSH="/Users/rodin/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="ys"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -24,7 +24,7 @@ ZSH_THEME="ys"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
 # DISABLE_UPDATE_PROMPT="true"
@@ -39,7 +39,7 @@ ZSH_THEME="ys"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="false"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -68,7 +68,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(z extract themes command-not-found sudo zsh-autosuggestions)
+plugins=(z extract command-not-found sudo zsh-autosuggestions sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,7 +97,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias python=python3
+alias python=python3.8
+alias pip=pip3
 alias ig='sudo pmset -a GPUswitch 0'
 alias dg='sudo pmset -a GPUswitch 1'
 alias ag='sudo pmset -a GPUswitch 2'
@@ -106,12 +107,19 @@ alias src='source ~/.zshrc'
 alias vrc='vim ~/.vimrc'
 alias h='cd ~'
 alias -s nicnt=vim
-alias getinitial='cp /Users/rodin/Documents/RodinYTY/initial.sh .'
+alias initial='cp /Users/rodin/Documents/RodinYTY/initial.sh .'
 alias mysql=/usr/local/mysql/bin/mysql
+alias vimt='nerdtree() {vim -c "NERDTree" $1}; nerdtree'
 set clipboard=unamed
-#alias rm="trash -F"
 export PATH=/usr/local/smlnj/bin:"$PATH"
 export PATH="/usr/local/opt/flex/bin:$PATH"
 export QTDIR=/Users/rodin/Qt/5.15.0/clang_64
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$QTDIR/lib
 export PATH=$PATH:$QTDIR/bin
+
+# HomeBrew
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+# HomeBrew END
+

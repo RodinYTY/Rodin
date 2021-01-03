@@ -98,6 +98,8 @@ vmap <C-c> :w !pbcopy<CR><CR>
 
 " easy-motion配置
 nmap ss <Plug>(easymotion-s2)
+nmap W <leader><leader>w
+nmap B <leader><leader>b
 
 " NerdTree才插件的配置信息
 ""将F2设置为开关NERDTree的快捷键
@@ -113,3 +115,4 @@ let g:NERDTreeSize=36
 let g:NERDTreeShowLineNumbers=1
 ""显示隐藏文件
 let g:NERDTreeShowHidden=1
+

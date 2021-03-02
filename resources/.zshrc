@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/rodin/.oh-my-zsh"
+export ZSH="/Users/admin/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -105,20 +105,18 @@ alias ag='sudo pmset -a GPUswitch 2'
 alias zrc='vim ~/.zshrc'
 alias src='source ~/.zshrc'
 alias vrc='vim ~/.vimrc'
-alias h='cd ~'
-alias -s nicnt=vim
-alias initial='cp /Users/rodin/Documents/RodinYTY/initial.sh .'
+alias glo='git log --oneline'
+alias glg='git log --graph'
+alias gra='git rebase --abort'
 alias mysql=/usr/local/mysql/bin/mysql
 alias vimt='nerdtree() {vim -c "NERDTree" $1}; nerdtree'
 set clipboard=unamed
 export PATH=/usr/local/smlnj/bin:"$PATH"
 export PATH="/usr/local/opt/flex/bin:$PATH"
-export QTDIR=/Users/rodin/Qt/5.15.0/clang_64
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$QTDIR/lib
 export PATH=$PATH:$QTDIR/bin
 
 # HomeBrew
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 # HomeBrew END

@@ -77,9 +77,6 @@ set bufhidden=hide
 inoremap jk <Esc>
 nnoremap H ^
 nnoremap L $
-inoremap ( ()<Esc>i
-inoremap [ []<Esc>i
-inoremap { {}<Esc>i
 vmap <C-x> :!pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
 

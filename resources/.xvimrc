@@ -3,6 +3,8 @@ syntax on
 "显示行号
 set nu
 " set easymotion
+"搜索不区分大小写
+set ignorecase
 
 "修改默认注释颜色
 hi Comment ctermfg=DarkCyan

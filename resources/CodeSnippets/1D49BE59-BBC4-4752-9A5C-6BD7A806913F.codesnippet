@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@weakify</string>
+	<string>@property</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@weakify(&lt;#object#&gt;);</string>
+	<string>@property (nonatomic, strong) &lt;#return value type#&gt; (^ _Nullable &lt;#name#&gt;)(&lt;#arguments#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8F1D2B3D-7C3B-4B45-AD6A-E9B1B1AA265C</string>
+	<string>1D49BE59-BBC4-4752-9A5C-6BD7A806913F</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>@weakify</string>
+	<string>Block Property Declaration</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

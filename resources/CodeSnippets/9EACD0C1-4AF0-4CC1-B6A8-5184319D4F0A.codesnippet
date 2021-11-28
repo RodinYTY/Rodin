@@ -9,11 +9,10 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    if (!&lt;#property#&gt;) {
-        &lt;#statements#&gt;
-    }
-
-    return &lt;#property#&gt;;</string>
+	<string>if (!&lt;#property#&gt;) {
+    &lt;#statements#&gt;
+}
+return &lt;#property#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>9EACD0C1-4AF0-4CC1-B6A8-5184319D4F0A</string>
 	<key>IDECodeSnippetLanguage</key>

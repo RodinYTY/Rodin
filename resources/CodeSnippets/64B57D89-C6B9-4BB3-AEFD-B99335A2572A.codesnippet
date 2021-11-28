@@ -3,23 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>callback</string>
+	<string>regular</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    if (self.delegate &amp;&amp; [self.delegate respondsToSelector:@selector(&lt;#selector#&gt;)]) {
-        &lt;#statements#&gt;
-    }</string>
+	<string>NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", &lt;#Regular Expr#&gt;];
+BOOL result = [predicate evaluateWithObject:&lt;#Object#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>988D64C7-E83B-4A8E-A682-25712A313D22</string>
+	<string>64B57D89-C6B9-4BB3-AEFD-B99335A2572A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>predicate</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Delegate Callback</string>
+	<string>Predicate Regular Expression</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@strongify</string>
+	<string>nslog</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@strongify(&lt;#object#&gt;);</string>
+	<string>BDALOG_PROTOCOL_DEBUG(&lt;#content#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D94754F7-E60C-4721-A470-BC883FBC8B87</string>
+	<string>E0960551-9E6A-4582-914F-4244429FD5C9</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>@strongify</string>
+	<string>BDALOG</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

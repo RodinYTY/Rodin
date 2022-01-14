@@ -3,24 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>dispatchonce</string>
+	<string>staticnsstring</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>static dispatch_once_t onceToken;
-dispatch_once(&amp;onceToken, ^{
-    &lt;#Statements#&gt;
-});</string>
+	<string>static NSString * const &lt;#keyStringVar#&gt; = @"&lt;#keyString#&gt;";</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>026150FB-2B7B-4D70-9684-A29AAAB2520C</string>
+	<string>DA0807C3-403B-4FC0-A749-714E42FB2D7A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Dispatch Once</string>
+	<string>Static NSString</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

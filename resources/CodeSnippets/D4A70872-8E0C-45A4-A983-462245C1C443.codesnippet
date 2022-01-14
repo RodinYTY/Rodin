@@ -3,24 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>dispatchonce</string>
+	<string>setter</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>static dispatch_once_t onceToken;
-dispatch_once(&amp;onceToken, ^{
-    &lt;#Statements#&gt;
-});</string>
+	<string>if (self.useNewComment) {
+    &lt;#new#&gt;
+} else {
+    &lt;#old#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>026150FB-2B7B-4D70-9684-A29AAAB2520C</string>
+	<string>D4A70872-8E0C-45A4-A983-462245C1C443</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Dispatch Once</string>
+	<string>comment-setter-branch</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
